@@ -44,19 +44,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Encoder\IEncoder.cs" />
-    <Compile Include="Encoder\XorEncoder.cs" />
+    <Compile Include="Encoders\IEncoder.cs" />
+    <Compile Include="Encoders\XorEncoder.cs" />
     <Compile Include="EncodeManager.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="EncodeManager.Designer.cs">
       <DependentUpon>EncodeManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\ConfigInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Watchers\ConfigWatcher.cs" />
+    <Compile Include="Watchers\DirectoryWatcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonUtilities\CommonUtilities.csproj">
+      <Project>{39001a51-37bb-4362-993b-c664b14d9182}</Project>
+      <Name>CommonUtilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

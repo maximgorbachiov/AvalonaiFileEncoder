@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 
-namespace EncoderService.Encoder
+namespace EncoderService.Encoders
 {
     public class XorEncoder<TFrom, TTo> : IEncoder<TFrom, TTo> where TFrom : Stream where TTo : Stream
     {
