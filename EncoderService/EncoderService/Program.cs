@@ -17,7 +17,7 @@ namespace EncoderService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new EncodeManager()
             };
             ServiceBase.Run(ServicesToRun);
         }

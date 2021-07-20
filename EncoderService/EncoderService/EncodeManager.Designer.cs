@@ -1,7 +1,7 @@
 ﻿
 namespace EncoderService
 {
-    partial class Service1
+    partial class EncodeManager
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace EncoderService
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.ServiceName = "EncodeManager";
         }
 
         #endregion

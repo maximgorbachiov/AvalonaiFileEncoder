@@ -10,15 +10,16 @@ using System.Threading.Tasks;
 
 namespace EncoderService
 {
-    public partial class Service1 : ServiceBase
+    public partial class EncodeManager : ServiceBase
     {
-        public Service1()
+        public EncodeManager()
         {
             InitializeComponent();
         }
 
         protected override void OnStart(string[] args)
         {
+
         }
 
         protected override void OnStop()
