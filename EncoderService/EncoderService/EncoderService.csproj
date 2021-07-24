@@ -44,7 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\ConfigurationReader.cs" />
+    <Compile Include="Converters\ByteConverter.cs" />
     <Compile Include="Encoders\IEncoder.cs" />
+    <Compile Include="Encoders\FileStreamEncoder.cs" />
+    <Compile Include="Encoders\IFileStreamEncoder.cs" />
     <Compile Include="Encoders\XorEncoder.cs" />
     <Compile Include="EncodeManager.cs">
       <SubType>Component</SubType>
@@ -67,6 +71,9 @@
       <Project>{39001a51-37bb-4362-993b-c664b14d9182}</Project>
       <Name>CommonUtilities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configuration\config.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
